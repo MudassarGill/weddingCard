@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #F8E8C7 0%, #D4AF37 50%, #AA820A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .border-gold-gradient {
+    border-image: linear-gradient(to bottom right, #F8E8C7, #D4AF37, #AA820A) 1;
+  }
+
+  .bg-gold-metallic {
+    background: linear-gradient(135deg, #E6C875 0%, #D4AF37 35%, #C5A059 70%, #AA820A 100%);
+  }
+
+  .bg-emerald-wax {
+    background: radial-gradient(circle at 35% 35%, #155D44 0%, #0B3B2B 60%, #052219 100%);
+  }
+
+  .shadow-wax {
+    box-shadow: 0 12px 28px -6px rgba(5, 34, 25, 0.45), 0 4px 10px rgba(0, 0, 0, 0.15), inset 0 2px 4px rgba(255, 255, 255, 0.18);
+  }
+
+  .paper-emboss {
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.8), inset 0 -2px 4px rgba(0, 0, 0, 0.04);
+  }
+}
+
+/* Base custom styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F2ECE3;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5A059;
+  border-radius: 3px;
+}
